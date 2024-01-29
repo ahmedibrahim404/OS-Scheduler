@@ -22,26 +22,6 @@ The scheduler component implements the following three scheduling algorithms:
   - Splits blocks into buddies if needed.
   - Merges neighboring free blocks after de-allocation.
 
-
-## Project Components
-
-### 1. Process Generator (`process_generator.c`):
-- Reads input files.
-- Initiates scheduler and clock processes.
-- Sends process information to the scheduler.
-
-### 2. Clock (`clk.c`):
-- Emulates an integer time clock for simulation and IPC.
-
-### 3. Scheduler (`scheduler.c`):
-- Implements HPF, SRTN, and RR algorithms.
-- Manages process states and PCBs.
-- Generates `Scheduler.log` and `Scheduler.perf` files.
-
-### 4. Process (`process.c`):
-- Acts as a CPU-bound process.
-- Notifies scheduler on termination.
-
 ### 5. Input/Output:
 - **Input File (`processes.txt`)**
 - **Output Files:**
